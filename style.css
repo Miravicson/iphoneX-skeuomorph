@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+:root {
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.showcase {
+    width: 80vw;
+    display: flex;
+    background: #555;
+    border-radius: 1.5em;
+    margin: 10vh auto;
+    min-height: 80vh;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5em;
+    position: relative;
+    z-index: -10;
+}
+
+.showcase > h1 {
+    color: white;
+    /* text-decoration: underline; */
+    padding-bottom: 0.5em;
+    text-shadow: 1px 1px 3px rgba(2, 2, 2, 0.3);
+}
+
+.iphonex h2 {
+    position: absolute;
+    left: 33%;
+    top: 40%;
+    z-index: 300;
+}
+
+.iphonex {
+    height: 33.7em;
+    width: 16.7em;
+    background-color: #555;
+    border-radius: 2.3em;
+    position: relative;
+    border: 0.0625em solid #222;
+}
+
+.iphonex::after {
+    height: 34.3em;
+    width: 17.3em;
+    background: white;
+    content: "";
+    display: block;
+    position: relative;
+    z-index: -1;
+    top: -0.4em;
+    left: -0.35em;
+    border: 0.125em solid #222;
+    border-radius: 2.6em;
+    box-shadow: 2px 2px 10px 15px rgba(2, 2, 2, 0.4);
+}
+
+.iphonex::before {
+    height: 32.2em;
+    width: 15.2em;
+    background: #eee;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0.75em;
+    left: 0.75em;
+    border-radius: 1.55em;
+}
+
+.iphonex .notch {
+    background-color: #555;
+    position: absolute;
+    left: 3.355em;
+    z-index: 10;
+    width: 10em;
+    height: 2.2em;
+    border-radius: 0 0 0.8em 0.8em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iphonex .notch::before {
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 0.3em;
+    width: 2.5em;
+    margin-left: 0.7em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+}
+
+.iphonex .notch::after {
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 0.6em;
+    width: 0.6em;
+    margin-left: 0.7em;
+    margin-top: 0.5em;
+    border-radius: 50%;
+
+}
+
+.iphonex .edge-blunter.one,
+.iphonex .edge-blunter.two {
+    background-color: #555;
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    border-color: #555;
+    top: 0.75em;
+}
+
+.iphonex .edge-blunter.one::after,
+.iphonex .edge-blunter.two::after {
+    content: "";
+    width: 1em;
+    height: 1em;
+    position: absolute;
+
+
+    background-color: #eee;
+}
+
+.iphonex .edge-blunter.one {
+
+    left: 2.40em;
+    z-index: 10;
+}
+
+.iphonex .edge-blunter.one::after {
+    border-radius: 0 0.5em 0 0;
+}
+
+
+
+.iphonex .edge-blunter.two {
+    right: 2.40em;
+    z-index: 10;
+}
+
+.iphonex .edge-blunter.two::after {
+    border-radius: 0.5em 0 0 0;
+}
+
+.iphonex .bottom-bar {
+    height: 0.2em;
+    width: 40%;
+    position: absolute;
+    background: #555;
+    bottom: 1.2em;
+    border-radius: 2px;
+    left: 30%;
+    z-index: 20;
+}
+
+.iphonex .button {
+    width: 0.15em;
+    background-color: white;
+    min-height: 1em;
+    position: absolute;
+}
+
+.button.silent,
+.button.volume,
+.button.volume {
+    border-top: 0.125em solid black;
+    border-left: 0.125em solid black;
+    border-bottom: 0.125em solid black;
+    border-radius: 0.13em 0 0 0.13em;
+    left: -0.469em;
+}
+
+.button.silent {
+    top: 5em;
+    height: 1.5em;
+}
+
+.button.volume.up {
+    top: 7.5em;
+    height: 3em;
+}
+
+.button.volume.down {
+    top: 11.5em;
+    height: 3em;
+}
+
+.button.volume.power {
+    border-left-color: transparent;
+    border-right: 0.125em solid black;
+    left: initial;
+    right: -0.7em;
+    top: 8em;
+    height: 4em;
+    border-radius: 0 0.13em .13em 0;
+}
